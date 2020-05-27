@@ -141,7 +141,7 @@ function getName(object) {
   return `Hello, my name is ${object.name}.`;
 }
 
-console.log(getName(makePersonObject(5, "Leia", "leia@leia.com")));
+// console.log(getName(makePersonObject(5, "Leia", "leia@leia.com")));
 
 
 /**
