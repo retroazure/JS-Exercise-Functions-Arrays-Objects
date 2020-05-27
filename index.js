@@ -185,11 +185,26 @@ function appleIndex(arr) {
  * passing in [ 'orange', 'apple', 'banana', 'apples', 'apple', 'mango' ] as the argument,
  * the returned value should be: [ false, true, false, false, true, false ].
 */
-function isItAnApple(/* code here */) {
-  /* code here */
+function isItAnApple(arr){
+
+  let isApple = false;
+
+  let newArr = [];
+
+  for(let i=0; i<arr.length; i++){
+    if(arr[i] === 'apple'){
+      isApple = true;
+      newArr.push(isApple);
+    }
+    else{
+      isApple = false;
+      newArr.push(isApple);
+    }
+  }
+  return newArr;
 }
 
-
+// console.log(isItAnApple([ 'orange', 'apple', 'banana', 'apples', 'apple', 'mango' ]));
 
 
 // ⭐️ Example Test Data ⭐️
@@ -210,7 +225,6 @@ var inventory = [
   { id: 13, car_make: "Chevrolet", car_model: "Cavalier", car_year: 1997 },
   { id: 14, car_make: "Dodge", car_model: "Ram Van 1500", car_year: 1999 }
 ]
-
 /**
   * ### Example Array Challenge:
   * 
