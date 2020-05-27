@@ -63,6 +63,7 @@ function temperatureCtoF(t) {
 }
 
 // console.log(temperatureCtoF(24));
+
 /**
  * ### Challenge `temperatureInF`
  * 
@@ -80,10 +81,20 @@ function temperatureCtoF(t) {
  * 
  * Hint: You can call your `temperatureCtoF` function from inside `temperatureInF`.
 */
-function temperatureInF(/* code here */) {
+function temperatureInF(t, sT) {
   /* code here */
+  if(sT === 'F')
+  {
+    return Math.floor(t) + 'F';
+  }
+  else if(sT === 'C')
+  {
+    return temperatureCtoF(t) + 'F';
+  }
+
 }
 
+// console.log(temperatureInF(88, 'F'));
 
 /**
  * ### Challenge `makePersonObject`
