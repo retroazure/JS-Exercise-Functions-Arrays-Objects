@@ -159,10 +159,17 @@ function getName(object) {
  * passing in [ 'orange', 'grape', 'apple', 'banana', 'mango' ] as the argument,
  * the returned value should be: 2.
 */
-function appleIndex(/* code here */) {
-  /* code here */
-}
+function appleIndex(arr) {
 
+  let num = 0; 
+  for(let i=0; i<arr.length; i++){
+    if(arr[i] === 'apple'){
+      num = i;
+    }
+  }
+  return num;
+}
+// console.log(appleIndex( [ 'orange', 'grape', 'apple', 'banana', 'mango' ]));
 /**
  * ### Challenge `isItAnApple`
  * 
