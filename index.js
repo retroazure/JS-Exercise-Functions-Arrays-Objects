@@ -112,9 +112,17 @@ function temperatureInF(t, sT) {
  *   email: "leia@leia.com",
  * }
 */
-function makePersonObject(/* code here */) {
-  /* code here */
+function makePersonObject(id, name, email) {
+  let person = {
+    id:id,
+    name:name,
+    email: email
+  }
+
+  return person;
 }
+
+// console.log(makePersonObject(5, "Leia", "leia@leia.com"));
 
 /**
  * ### Challenge `getName`
